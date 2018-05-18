@@ -14,10 +14,10 @@ app.use(bodyParser.urlencoded({
 }));
 
 server.listen(3000, function () {
-	//var host = server.address().address;
-	//var port = server.address().port;
-	var host = "localhost";
-	var port = 3000;
+	var host = server.address().address;
+	var port = server.address().port;
+	//var host = "localhost";
+	//var port = 3000;
 	console.log('Example app listening at http://%s:%s', host, port);
 });
 
